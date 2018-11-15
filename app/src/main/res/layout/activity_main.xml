@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Start"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="Restart"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/bStart"
+        app:layout_constraintTop_toBottomOf="@+id/bStart" />
+
+    <Button
+        android:id="@+id/bResume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="Resume"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/bRestart"
+        app:layout_constraintTop_toBottomOf="@+id/bRestart" />
+
+    <Button
+        android:id="@+id/bPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="Pause"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/bResume"
+        app:layout_constraintTop_toBottomOf="@+id/bResume" />
+
+    <Button
+        android:id="@+id/bStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="Stop"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/bPause"
+        app:layout_constraintTop_toBottomOf="@+id/bPause" />
+
+    <Button
+        android:id="@+id/bDestroy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Destroy"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/bStop"
+        app:layout_constraintTop_toBottomOf="@+id/bStop" />
+</android.support.constraint.ConstraintLayout>
